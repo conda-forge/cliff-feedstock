@@ -1,13 +1,14 @@
-{%set version = "2.1.0" %}
+{%set name = "cliff" %}
+{%set version = "2.2.0" %}
 
 package:
-  name: cliff
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: cliff-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/c/cliff/cliff-{{ version }}.tar.gz
-  sha256: 0c3d100cbf47d168bdca70acf890f1fc024abdadac13ede1336b0f8075403dea
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: a12a6bd3cf9085f0e0589c5019037ac4ee410413abbb76189fa62695f79f84fc
 
 build:
   number: 0
@@ -41,7 +42,10 @@ test:
 about:
   home: https://github.com/openstack/cliff
   license: Apache 2.0
+  license_family: Apache
   summary: 'Command Line Interface Formulation Framework'
+  dev_url: http://git.openstack.org/cgit/openstack/cliff
+  doc_url: http://docs.openstack.org/developer/cliff
 
 extra:
   recipe-maintainers:
