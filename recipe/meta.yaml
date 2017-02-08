@@ -47,6 +47,7 @@ about:
   home: https://github.com/openstack/cliff
   license: Apache 2.0
   license_family: Apache
+  license_file: LICENSE
   summary: 'Command Line Interface Formulation Framework'
   dev_url: http://git.openstack.org/cgit/openstack/cliff
   doc_url: http://docs.openstack.org/developer/cliff
