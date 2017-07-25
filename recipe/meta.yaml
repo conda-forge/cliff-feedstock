@@ -1,8 +1,8 @@
 {%set name = "cliff" %}
-{%set version = "2.7.0" %}
+{%set version = "2.8.0" %}
 {%set compress_type = "tar.gz" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "5006d8dbb95136f0cbf5e4f3e518767b3c71d6819de935646e012c3e6fca77a7" %}
+{%set hash_val = "a4fd35b3d98f5f806b6f38c97559ad671376f7d54d1e29015dbd6d805a13ff46" %}
 {%set build_num = "0" %}
 
 package:
