@@ -3,7 +3,6 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "38a318fb2927edb61cae365d4bf3a8241f222e2b30cc9e448ae5b92665802a85" %}
-{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
@@ -11,30 +10,30 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
     - python
-    - cmd2 >=0.6.7
+    - pbr !=2.1.0,>=2.0.0
+    - cmd2 >=0.8.0
     - prettytable <0.8,>=0.7.1
     - pyparsing >=2.1.0
-    - six >=1.9.0
+    - six >=1.10.0
     - stevedore >=1.20.0
     - unicodecsv >=0.8.0  # [not py3k]
-    - pyyaml >=3.10.0
+    - pyyaml >=3.12
 
 test:
   imports:
