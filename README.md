@@ -14,7 +14,9 @@ Summary: Command Line Interface Formulation Framework
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/cliff-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cliff-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cliff-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cliff-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/cliff-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cliff-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cliff-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cliff-feedstock/branch/master)
 
 Current release info
 ====================
