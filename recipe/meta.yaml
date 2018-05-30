@@ -1,8 +1,8 @@
 {% set name = "cliff" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "38a318fb2927edb61cae365d4bf3a8241f222e2b30cc9e448ae5b92665802a85" %}
+{% set hash = "9d75969ce763f4288b9e2bda0c54cd714321e0fd8be771a4510ab29b55ff8dcb" %}
 
 package:
   name: {{ name|lower }}
