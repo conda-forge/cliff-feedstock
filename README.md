@@ -14,14 +14,16 @@ Summary: Command Line Interface Formulation Framework
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cliff-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cliff-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cliff-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cliff-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cliff-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cliff-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cliff-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cliff-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/cliff-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/cliff-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/cliff-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/cliff-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cliff/badges/version.svg)](https://anaconda.org/conda-forge/cliff)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cliff/badges/downloads.svg)](https://anaconda.org/conda-forge/cliff)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cliff-green.svg)](https://anaconda.org/conda-forge/cliff) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cliff.svg)](https://anaconda.org/conda-forge/cliff) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cliff.svg)](https://anaconda.org/conda-forge/cliff) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cliff.svg)](https://anaconda.org/conda-forge/cliff) |
 
 Installing cliff
 ================

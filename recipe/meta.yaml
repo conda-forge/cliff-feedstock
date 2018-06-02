@@ -1,8 +1,8 @@
 {% set name = "cliff" %}
-{% set version = "2.11.0" %}
+{% set version = "2.12.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "38a318fb2927edb61cae365d4bf3a8241f222e2b30cc9e448ae5b92665802a85" %}
+{% set hash = "9d75969ce763f4288b9e2bda0c54cd714321e0fd8be771a4510ab29b55ff8dcb" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,6 @@ build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
-
 requirements:
   build:
     - python
@@ -27,12 +26,13 @@ requirements:
   run:
     - python
     - pbr !=2.1.0,>=2.0.0
-    - cmd2 >=0.8.0
-    - prettytable <0.8,>=0.7.1
+    - cmd2 !=0.8.3,<0.9.0  # [py2k]
+    - cmd2 !=0.8.3  # [py3k]
+    - prettytable <0.8,>=0.7.2
     - pyparsing >=2.1.0
     - six >=1.10.0
     - stevedore >=1.20.0
-    - unicodecsv >=0.8.0  # [not py3k]
+    - unicodecsv >=0.8.0  # [py2k]
     - pyyaml >=3.12
 
 test:
