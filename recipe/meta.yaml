@@ -1,8 +1,8 @@
 {% set name = "cliff" %}
-{% set version = "2.15.0" %}
+{% set version = "2.17.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "fe044273539250a99a5b9915843902e40e4e9b32ac5698c1fae89e31200d649f" %}
+{% set hash = "f5a1c6b32047aa0d272398d311fd711d41dd5e1cd5195ebe36ebb47f464416fa" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
