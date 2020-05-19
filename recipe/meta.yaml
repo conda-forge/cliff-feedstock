@@ -1,8 +1,8 @@
 {% set name = "cliff" %}
-{% set version = "2.15.0" %}
+{% set version = "3.1.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "fe044273539250a99a5b9915843902e40e4e9b32ac5698c1fae89e31200d649f" %}
+{% set hash = "529b0ee0d2d38c7cbbababbbe3472b43b667a5c36025ef1b6cd00851c4313849" %}
 
 package:
   name: {{ name|lower }}
@@ -16,23 +16,22 @@ source:
 build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
 
 requirements:
   build:
-    - python
+    - python >=3.5
     - pip
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python
+    - python >=3.5
     - pbr !=2.1.0,>=2.0.0
-    - cmd2 !=0.8.3,<0.9.0  # [py2k]
-    - cmd2 !=0.8.3  # [py3k]
-    - prettytable <0.8,>=0.7.2
+    - cmd2 !=0.8.3
+    - prettytable >=0.7.2
     - pyparsing >=2.1.0
     - six >=1.10.0
     - stevedore >=1.20.0
-    - unicodecsv >=0.8.0  # [py2k]
     - pyyaml >=3.12
 
 test:
@@ -45,8 +44,8 @@ test:
 
 about:
   home: https://github.com/openstack/cliff
-  license: Apache 2.0
-  license_family: Apache
+  license: Apache-2.0
+  license_family: APACHE
   license_file: LICENSE
   summary: 'Command Line Interface Formulation Framework'
   dev_url: http://git.openstack.org/cgit/openstack/cliff
@@ -57,3 +56,4 @@ extra:
     - anguslees
     - pmlandwehr
     - amatthies
+    - tschoonj
