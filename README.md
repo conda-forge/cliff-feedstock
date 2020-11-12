@@ -5,11 +5,13 @@ Home: https://github.com/openstack/cliff
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cliff-feedstock/blob/master/LICENSE.txt)
 
 Summary: Command Line Interface Formulation Framework
 
+Development: http://git.openstack.org/cgit/openstack/cliff
 
+Documentation: http://docs.openstack.org/developer/cliff
 
 Current build status
 ====================
