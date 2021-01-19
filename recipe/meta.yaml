@@ -29,7 +29,6 @@ requirements:
     - cmd2 !=0.8.3
     - prettytable >=0.7.2
     - pyparsing >=2.1.0
-    - six >=1.10.0
     - stevedore >=2.0.1
     - pyyaml >=3.12
 
