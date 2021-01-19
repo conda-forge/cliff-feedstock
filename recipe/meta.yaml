@@ -1,7 +1,7 @@
 {% set name = "cliff" %}
-{% set version = "3.5.0" %}
+{% set version = "3.6.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "5bfb684b5fcdff0afaaccd1298a376c0e62e644c46b7e9abc034595b41fe1759" %}
+{% set hash = "a3f4fa67eeafbcfa7cf9fe4b1755d410876528e1d0d115740db00b50a1250272" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
   noarch: python
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
     - pbr !=2.1.0,>=2.0.0
@@ -29,7 +29,6 @@ requirements:
     - cmd2 !=0.8.3
     - prettytable >=0.7.2
     - pyparsing >=2.1.0
-    - six >=1.10.0
     - stevedore >=2.0.1
     - pyyaml >=3.12
 
