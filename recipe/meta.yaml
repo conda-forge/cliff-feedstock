@@ -1,7 +1,7 @@
 {% set name = "cliff" %}
-{% set version = "3.7.0" %}
+{% set version = "3.8.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "389c81960de13f05daf1cbd546f33199e86c518ba4266c79ec7a153a280980ea" %}
+{% set hash = "8dd215d0a84c9a3ab2fa2aa700849f4e7b786639f66caa0ad4108c85dca95a7c" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
