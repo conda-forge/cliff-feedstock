@@ -122,6 +122,5 @@ Feedstock Maintainers
 
 * [@amatthies](https://github.com/amatthies/)
 * [@anguslees](https://github.com/anguslees/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 * [@tschoonj](https://github.com/tschoonj/)
 
