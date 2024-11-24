@@ -1,7 +1,7 @@
 {% set name = "cliff" %}
-{% set version = "4.7.0" %}
+{% set version = "4.8.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "6ca45f8df519bbc0722c61049de7b7e442a465fa7f3f552b96d735fa26fd5b26" %}
+{% set hash = "23eff502e603cf0aa841eaea6662a42cd3064169162b3e596b20226400e34dfd" %}
 
 package:
   name: {{ name|lower }}
@@ -19,15 +19,16 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python 3.9
     - pip
+    - setuptools
     - pbr !=2.1.0,>=2.0.0
 
   run:
-    - python >=3.8
+    - python >=3.9
     - autopage >=0.4.0
     - cmd2 >=1.0.0
-    - importlib_metadata >=4.4
+    - importlib-metadata >=4.4
     - prettytable >=0.7.2
     - stevedore >=2.0.1
     - pyyaml >=3.12
