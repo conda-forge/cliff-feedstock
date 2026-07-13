@@ -2,7 +2,7 @@
 {% set version = "4.15.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash = "eca699f6b390c755e6ed1816a76cdfc1abf5f5ef7d1cee19f3833667a3a1fe39" %}
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 
 
 package:
