@@ -1,7 +1,7 @@
 {% set name = "cliff" %}
-{% set version = "4.15.0" %}
+{% set version = "4.16.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "eca699f6b390c755e6ed1816a76cdfc1abf5f5ef7d1cee19f3833667a3a1fe39" %}
+{% set hash = "85314ad49bd62f90a51094d4e31b1cb4d3b92fb83cb3935eeba0236c32839e75" %}
 {% set python_min = "3.11" %}
 
 
@@ -11,7 +11,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   sha256: {{ hash }}
 
 build:
